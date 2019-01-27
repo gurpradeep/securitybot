@@ -6,7 +6,8 @@ __email__ = 'abertsch@dropbox.com'
 
 import logging
 from datetime import datetime
-from urllib import urlencode
+#python 3 urllib can be replaced by urllib.parse
+from urllib.parse import urlencode
 from securitybot.auth.auth import Auth, AUTH_STATES, AUTH_TIME
 
 from typing import Any
